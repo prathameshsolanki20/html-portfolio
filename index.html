@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="shortcut icon" href="./assets/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f1de9ba23f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div id="container">
+            <nav>
+                <img  src="./assets/logo1.png" height="75px" alt="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h3>Hello It's Me</h3>
+                <h1><span>Prathamesh Solanki</span></h1>
+                <h3>And I'm a Software Developer</h3>
+            </div>
+        </div>
+    </div>
+    <!-----------------About---------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img class="profile_image" src="./assets/pratham-img.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About <span class="extra">Me</span></h1>
+                    <p>I have Completed Bachelor of Technology in Computer Science and Engineering (BTech) from
+                        Maharashtra Institute of Technology,Aurangabad.
+                        And also I have completed my Honours in Data Science. Proficient in HTML, CSS, C, C++, Python, Java and SQL.
+                        Experienced in innovative project development. Ability to learn new Softwares and Technologies
+                        quickly.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('education')"><b>Education</b></p>
+                        <p class="tab-links" onclick="opentab('services')"><b>Services</b></p>
+                    </div>
+                    <div class="tab-contents active-tab" id="education">
+                        <ul>
+                            <li><span><b>2019-2023</b></span><br>(Computer Science and Engineering) BTech (8.38 CGPA)<br> MIT Aurangabad
+                            </li>
+                            <li><span><b>2017-2019</b></span><br>Class XII (67.80%)<br> Shree Dnyaneshwar Mahavidyalaya, Peth,Chikhli</li>
+                            <li><span><b>2016-2017</b></span><br>Class X (88.40%)<br>St. Joseph's English High School, Buldhana</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="services">
+                        <ul>
+                            <li><span><b>Web Developer</b></span><br>Development of custom web pages.
+                            </li>
+                            <li><span><b>Front-End Developer</b></span><br>Developing and maintaining the user interface.</li>
+                            <li><span><b>Developer</b></span><br>Building a custom tailored solution based on your technical
+                                specification.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----------------skills---------------->
+    <div id="skills">
+        <div class="container">
+            <h1 class="sub-title">Ski<span class="extra">ll's</span></h1>
+            <div class="skills-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>JAVA</h2>
+                    <p>Expertise in Java programming with the focus on Object-Oriented Programming (OOP) principles.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>HTML/CSS</h2>
+                    <p>Proficient in creating responsive and visually appealing web designs using HTML and CSS.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>C Programming</h2>
+                    <p>Proficient in C Programming with a strong grasp of low-level solutions and designing efficient
+                        algorithms for software development.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>JavaScript</h2>
+                    <p>Advanced skills in front-enf development using JavaScript for interactive web applications.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>SQL</h2>
+                    <p>Proficient in designing and managing SQL databases for data-driven applications.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------------portfolio-------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My <span class="extra">Project</span></h1>
+            <div class="project-list">
+
+                <div class="project">
+                    <img src="./assets/work.jpeg">
+                    <div class="layer">
+                        <h3><b>Readify Gaming Application</b></h3>
+                        <br>
+                        <p>Readify Gaming Application is used to learn and practice english perfectly.
+                            services.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="./assets/work-3.png">
+                    <div class="layer">
+                        <h3><b>Portfolio</b></h3>
+                        <br>
+                        <p>It is my personal portfolio website which shows my individual skills,achievements and my
+                            work.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------------------contact------------------------------>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <img src="./assets/contact.png">
+                </div>
+                <div class="contact-right">
+                    <h1 class="sub-title">Contact <span class="extra">Me</span></h1>
+                    <p><i class="fa-solid fa-envelope"></i> prathameshsolanki20@gmail.com</p>
+                    <p><i class="fa-solid fa-phone-volume"></i> 7372989966</p>
+                    <p><i class="fa-solid fa-location-crosshairs"></i> Aurangabad,Maharashtra</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/prathamesh-solanki-8b7719256/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/prathameshsolanki20"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/_prathamesh_29/"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="./assets/Prathamesh_Solanki_Resume.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Prathamesh.  |  AllRights Reserved</p>
+        </div>
+    </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+
+</body>
+
+</html>
